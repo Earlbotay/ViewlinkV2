@@ -36,7 +36,7 @@ def open_url(url):
     print(f"Opened {url} with status code {response.status_code}")
 
     # Buka Chrome dengan Selenium untuk simulasi klik
-    driver = webdriver.Chrome(service=Service('/usr/local/bin/chromedriver'), options=chrome_options)
+    driver = webdriver.Chrome(service=Service('/usr/bin/chromedriver'), options=chrome_options)
     driver.get(url)
 
     # Tunggu sehingga elemen klik dapat dilihat
@@ -73,3 +73,4 @@ def main():
 # Jalankan fungsi utama
 if __name__ == "__main__":
     main()
+    
